@@ -1,0 +1,179 @@
+/* set font and margin for body */
+body {
+  font-family: sans-serif;
+  margin: 0%;
+  background-color: rgb(234, 234, 234);
+}
+
+header {
+  color: white; /* text color */
+  background-color: rgb(52, 157, 249); /* background color */
+  display: flex; /* flex */
+  justify-content: space-between; /* gives space between */
+  align-items: center; /* align to the center */
+  width: 100%; /* width set to 100% */
+}
+
+.logo {
+  padding-left: 20px; /* logo-padding left */
+}
+
+.search {
+  display: flex; /* flex */
+  justify-content: left; /* alig text inside search to left */
+  align-items: center; /* align text center vertically */
+  width: 250px; /* width of search bar */
+  height: 30px; /* height of search bar */
+  color: rgba(0, 0, 0, 0.502); /* text color */
+  border: 1px solid black; /* border color */
+  background-color: white; /* bg-color of search bar */
+  padding-left: 1%; /* search bar padding left */
+}
+
+nav a {
+  text-decoration: none; /* reomoves underline to navigation */
+  padding-right: 20px; /* give space right to navigation */
+  color: rgb(255, 255, 255); /* nav text color */
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto; /* margin 0% and auto to align the container center */
+  margin-top: 30px; /* margin top */
+  display: flex; /* flex */
+  gap: 10px; /* gaps to the grids */
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p {
+  font-size: 15px; /* font size */
+  color: rgba(0, 0, 0, 0.808); /* font color */
+  line-height: 20px; /* gap between each lines */
+}
+
+.box {
+  background-color: white;
+  border: 2px solid rgba(201, 201, 201, 0.276); /* border */
+  padding: 20px; /* Add padding to the boxes for spacing */
+  border-radius: 1%; /* gives curve edges to the box border */
+  box-shadow: 2px 2px 2px rgb(201, 201, 201); /* shadow effect to the boxes */
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  flex: 1;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1.4;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.box1 {
+  padding: 0;
+  flex: 2;
+  height: fit-content;
+}
+
+.menu {
+  display: none;
+}
+
+#text1 {
+  padding: 10px; /* padding */
+}
+
+img {
+  max-width: 100%;
+}
+
+#button {
+  font-size: 14px;
+  height: 30px; /* height for the button */
+  width: 100px; /* width of button */
+  background-color: rgb(52, 157, 249); /* bg color of button */
+  color: white; /* text color */
+  display: flex; /* flex */
+  justify-content: center; /* align text inside button to center */
+  align-items: center; /* align text inside button to center vertically */
+  border-radius: 8%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right within the button container */
+  margin: 10px; /* Adjust the margin-top as needed to separate the button from the text */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 481px) {
+  .box2 {
+    flex-direction: row;
+  }
+  .box3 {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 800px) {
+  .navigation nav a {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row;
+  }
+
+  .box2 {
+    flex-direction: column;
+  }
+
+  .box3 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1280px) {
+  .box2 {
+    flex-direction: row;
+  }
+  .box3 {
+    flex-direction: row;
+  }
+}
